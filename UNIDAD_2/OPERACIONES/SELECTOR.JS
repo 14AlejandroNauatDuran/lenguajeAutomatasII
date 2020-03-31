@@ -165,3 +165,25 @@ function EcuAritAvanzado() {
 //};
 //aqui se termina el controlador
 //_________________________________________________________________________________________________
+function GeneradorTriplo(contador, caracter1, opera, caracter2) {
+      
+              if (opera == "*") {
+              return `t${contador} = ${caracter2} ${"*"} ${caracter1}` + saltoDeLinea;
+              //return "t"+ contador + "=" + caracter2 + "*" + caracter1 + saltoDeLinea;
+              }
+              if (opera == "/") {
+              return `t${contador} = ${caracter2} ${"/"} ${caracter1}` + saltoDeLinea;
+              //return "t"+ contador + "=" + caracter2 + "/" + caracter1 + saltoDeLinea;
+              }
+              if (opera == "+") {
+              return `t${contador} = ${caracter2} ${"+"} ${caracter1}` + saltoDeLinea
+              //return "t"+ contador + "=" + caracter2 + "+" + caracter1 + saltoDeLinea;
+              }
+              if (opera == "-") {
+              return `t${contador} = ${caracter2} ${"-"} ${caracter1}` + saltoDeLinea
+              //return "t"+ contador + "=" + caracter2 + "-" + caracter1 + saltoDeLinea;
+              }
+     
+       return "";
+   };//fin de generadorTriplo
+};//fin de EcuAritAvanzado()
